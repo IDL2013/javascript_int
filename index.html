@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- User input Section for adding new book --> 
+    <div class="input-section">
+          <h2>Add a New Book</h2>
+          <form>
+          <input type="text" id="bookTitle" placeholder="Book Title">
+          <input type="text" id="bookAuthor" placeholder="Book Author">
+          <input type="number" id="bookPages" placeholder="Pages">
+          <input type="checkbox" id="bookRead"><label for="bookRead">Already read</label>
+          <button id="addBookBtn">Add Book</button>
+        </form>
+      </div>
+  
+      <!-- Book List Section -->
+      <div class="library">
+        <div class="book-list">
+            <h2>My Books</h2>
+            <ul id="bookList"></ul>
+       </div>
+      </div>
+      <script src="script.js"></script>
+
+</body>
+
+</html>
