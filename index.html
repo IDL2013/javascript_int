@@ -8,24 +8,38 @@
 </head>
 <body>
    <!-- User input Section for adding new book --> 
-    <div class="input-section">
-          <h2>Add a New Book</h2>
-          <form>
-          <input type="text" id="bookTitle" placeholder="Book Title">
-          <input type="text" id="bookAuthor" placeholder="Book Author">
-          <input type="number" id="bookPages" placeholder="Pages">
-          <input type="checkbox" id="bookRead"><label for="bookRead">Already read</label>
-          <button id="addBookBtn">Add Book</button>
-        </form>
-      </div>
-  
-      <!-- Book List Section -->
-      <div class="library">
-        <div class="book-list">
-            <h2>My Books</h2>
-            <ul id="bookList"></ul>
-       </div>
-      </div>
+   <div class="header">
+    <h1>The Midnight Library</h1>
+      <ul class="navbar">
+        <li id="Home"><button>Home</button></li>
+        <li id="About"><button>About</button></li>
+        <li id="Login"><button>Login</button></li>
+      </ul>
+   </div> 
+   <div class="main">
+     <div class="input-section">
+            <h2>Add a New Book</h2>
+            <form id= "input-form">
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="bookAuthor" placeholder="Book Author">
+            <input type="number" id="bookPages" placeholder="Pages">
+            <select id="read" name="read_status">
+              <option value="no">Not read</option>
+              <option value="current">Currently reading</option>
+              <option value="finished">Read</option>
+            </select>
+            <button id="addBookBtn">Add Book</button>
+          </form>
+        </div>
+        <!-- Book List Section -->
+        <div class="library">
+          <div class="book-list">
+              <h2>My Books</h2>
+              <ul id="bookList">
+              </ul>
+         </div>
+        </div>
+   </div>
       <script src="script.js"></script>
 
 </body>
